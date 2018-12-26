@@ -9,13 +9,13 @@ void setup() {
   while(!Serial);
   digitalWrite(13, HIGH);
 
-  myServo.moveServo(0, 1500, 1000);
-  delay(2000);
+  myServo.moveServo(1, 1500, 1000);
+  delay(1000);
 }
 
 void loop() {
-  myServo.moveServo(0, 1400, 1000);
+  myServo.moveServo(1, 1400, 1000);
   delay(2000);
-  myServo.moveServo(0, 1600, 1000);
+  myServo.moveServo(1, 1600, 1000);
   delay(2000);
 }
